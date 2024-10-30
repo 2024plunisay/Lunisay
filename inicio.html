@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/inicio.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="./img/logo.png" alt="" width="50px"></a>
+        <ul class="navbar">
+            <li><a>Inicio</a></li>
+            <li><a>Chat</a></li>
+            <li><a>Datos C.</a></li>
+            <li><a>Calendario</a></li>
+        </ul>
+        <a href="#resgistrate" class="btn">Registrate</a>
+        <a href="#ingresa" class="btn">Ingresa</a>
+    </header>
+
+    <div id="resgistrate" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Formulario de Registro</h2>
+            <form action="procesar_registro.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="documento">Documento:</label>
+                <input type="number" id="documento" name="documento" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" class="btn">Registrarse</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="ingresa" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Formulario para Ingresar</h2>
+            <form action="procesar_ingreso.php" method="POST">
+                <label for="nombre">Usuario:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" class="btn">Ingresa</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="inicio" id="inicio">
+        <div class="text">
+            <h2>Lunisay</h2>
+            <p>Lunisay te brinda confianza, para que tengas una experiencia única. Nunca estarás sol@.</p>
+        </div>
+        <div class="inicio-img">
+            <img src="./img/imginicio.jpg" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <hr>
+        <p>Lunisay</p>
+        <p>Leidy-Luisa-Luna &copy; 2023-2024</p>
+        <p>10 Info 2 - 11 Info 2</p>
+        <div class="social-icons">
+            <a href="https://api.whatsapp.com/send?phone=573161642384" class="fab fa-whatsapp" style="color: #000000;"><img src="./img/icons8-whatsapp-64.png" alt=""></a>
+            <a href="https://www.instagram.com/" class="fa fa-image" style="color:#000000;"><img src="./img/icons8-instagram-viejo-64.png" alt=""></a>
+        </div>
+        <div class="imgfooter">
+            <img src="./img/cefalogo.webp" alt="" width="40%" style="border-radius: 50%;">
+            <img src="./img/pascuallogo.jpg" alt="" width="50%">
+        </div>
+    </footer>
+</body>
+</html>

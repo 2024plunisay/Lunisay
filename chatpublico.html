@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat de Apoyo Psicológico</title>
+    <link rel="stylesheet" href="./css/chatpublico.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="./img/logo.png" alt="" width="50px"></a>
+        <p>Chat Publico</p>
+        <a href="./chatpublico.html" class="btn btn-warning"> Regresar</a>
+    </header>
+    <div class="chatbox-container">
+        <div class="chatbox-header">
+            <h2>Chat Publico </h2>
+            <p>Estamos aquí para escucharte y ayudarte</p>
+        </div>
+        <div class="chat-container">
+            <div id="chatbox">
+                <div class="bot-message">Hola, soy tu chatbot. ¿En qué puedo ayudarte?</div>
+            </div>
+            <input type="text" id="userInput" placeholder="Escribe tu mensaje aquí..." autofocus>
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+        
+
+    <script src="./js/chatpublico.js"></script>
+</body>
+</html>
